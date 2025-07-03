@@ -37,7 +37,7 @@ class TripleTrouble {
         Map<Integer,Integer> hmap = new HashMap<>();                // USING HASHMAP TO STORE THE FREQUENCIES (num,frequency)
 
         for (int num : a){
-            hmap.put (num , hmap.getOrDefault(num,0)+1);
+            hmap.put (num , hmap.getOrDefault(num,0)+1) ;
         }
         for(Map.Entry<Integer,Integer> entry : hmap.entrySet()){
             if (entry.getValue()!=3)                                //MAIN LOGIC
