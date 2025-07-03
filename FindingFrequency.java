@@ -45,7 +45,7 @@ Output
 */
 import java.util.*;
 
-class FindingFrequency {
+class FindingFrequency{
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
