@@ -34,13 +34,13 @@ import java.util.*;
 
 class TripleTrouble {
     public static int UniqueValue (int a[]){
-        Map<Integer,Integer> hmap = new HashMap<>();
+        Map<Integer,Integer> hmap = new HashMap<>();                // USING HASHMAP TO STORE THE FREQUENCIES (num,frequency)
 
         for (int num : a){
             hmap.put (num , hmap.getOrDefault(num,0)+1);
         }
         for(Map.Entry<Integer,Integer> entry : hmap.entrySet()){
-            if (entry.getValue()!=3)
+            if (entry.getValue()!=3)                                //MAIN LOGIC
                 return entry.getKey();
         }
         return -1;

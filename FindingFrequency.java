@@ -54,9 +54,9 @@ class FindingFrequency {
         for(int i=0;i<n;i++){
             arr[i] = sc.nextInt();
         }
-        Map<Integer,Integer> hmap = new HashMap<>();
+        Map<Integer,Integer> hmap = new HashMap<>();                // HashMap to store the frequncies (num,frequency)
         for (int num : arr){
-            hmap.put (num, hmap.getOrDefault(num,0)+1);
+            hmap.put (num, hmap.getOrDefault(num,0)+1);             // MAIN LOGIC
         }
         int q = sc.nextInt();
         while(q-->0){
