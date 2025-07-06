@@ -1,8 +1,6 @@
-# Coding-with-07 (description)
-Unlocking Logic one day at a Time . This repo is a growing vault of daily practice . #CodeEveryday #GitStreak #CodingWith07
 #  Coding with 07
 
-Welcome to **Coding with 07** — a daily coding journey by **Mohammed Ayub** 🚀  
+Welcome to **Coding with 07** — a daily coding journey by **Mohammed Ayub**  
 This repository is dedicated to building consistency, sharpening skills, and staying committed to the grind. From basic algorithms to real-world logic, this is where code meets discipline.
 
 ---
@@ -10,7 +8,8 @@ This repository is dedicated to building consistency, sharpening skills, and sta
 ##  What You'll Find Here
 
 -  Daily DSA Practice (Java, Python, etc.)
-- JavaScript Experiments
+-  Optimized Solutions for the problems.
+-  JavaScript Experiments
 -  Notes and Mini Projects
 -  Logic Building Exercises
 -  Revision and Reimplementation of Old Codes
@@ -20,10 +19,10 @@ This repository is dedicated to building consistency, sharpening skills, and sta
 ## 🗓 Why This Exists
 
 Consistency is key to mastery. This repo:
-- Keeps my GitHub streak alive 🌱  
-- Tracks my growth in coding 📈  
-- Helps me reflect and revisit logic 🧠  
-- Pushes me to code something every day — no excuses! 💪
+- Keeps my GitHub streak alive   
+- Tracks my growth in coding   
+- Helps me reflect and revisit logic   
+- Pushes me to code something every day — no excuses! 
 
 ---
 
