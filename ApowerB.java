@@ -38,17 +38,17 @@ Output
 import java.util.*;
 
 class ApowerB {
-    final static int m = 1000000007;              //Since result can be very large so declare mod 
+    final static int MOD = 1000000007;              //Since result can be very large so declare mod 
     public static long power (long a , long B){
         long pow = 1;
         while(B!=0){
             if((B & 1) == 1){       // Checking SET Bits
-                pow=(pow*a)%m;      // MAIN LOGIC
+                pow=(pow*a)%MOD;      // MAIN LOGIC
             }
             B = B >> 1;
-            a=(a*a)%m;              //Updating base value
+            a=(a*a)%MOD;              //Updating base value
         }
-        return pow %m ;
+        return pow %MOD ;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
