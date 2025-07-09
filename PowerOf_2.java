@@ -1,5 +1,7 @@
 /*
-Power of 2 bookmark_borderGiven a number, check if it is a power of 2.
+Power of 2 
+
+Given a number, check if it is a power of 2.
 
 Input Format
 The first line of input contains T - the number of test cases. It's followed by T lines, each line containing a single positive integer.
