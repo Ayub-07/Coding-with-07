@@ -49,9 +49,9 @@ Constraints:
 1 <= s.length <= 104
 s consists of parentheses only '()[]{}'.*/
 
-/**** APPROACH -1 USING STACK   T.C -> O(n) ------ S.C -> O(n) *****/
+/**** APPROACH -1 USING STACK   T.C -> O(n) ------ S.C -> O(n) Runtime = 2 m/s (leetcode) *****/
 import java.util.*;
-class MaximumSubarraySum{
+public class ValidParenthesis{
     public boolean isValid(String s) {
         Stack<Character> st = new Stack<>();
         char ar [] = s.toCharArray();
@@ -65,5 +65,26 @@ class MaximumSubarraySum{
         }
         }
         return st.isEmpty();
+    }
+}
+/**** APPROACH -2 WITHOUT USING STACK   T.C -> O(n) ------ S.C -> O(n) Runtime = 1 m/s (leetcode) *****/
+
+class validParenthesis {
+    public boolean isValid(String s) {
+        int n = s.length();
+        char carr [] = s.toCharArray();
+        char ar [] = new char [n];          // This array acts as stack
+        int top = -1;                       // User defined stack pointer 
+        for(char c : carr){
+            if(c=='(' || c=='{' || c=='[')
+                ar[++top] = c;
+            else if (top==-1 || (c==')' && ar[top]!='(') ||
+                                (c=='}' && ar[top]!='{') ||
+                                (c==']' && ar[top]!='['))
+                return false;
+            else
+                top--;
+        }
+        return top == -1;
     }
 }
