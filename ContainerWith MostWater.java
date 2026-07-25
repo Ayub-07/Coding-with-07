@@ -38,9 +38,14 @@ class Solution {
             int width = p2-p1;
             int ht = Math.min(height[p1],height[p2]); 
             most_water = Math.max(most_water , width*ht);   //MAIN LOGIC
-            if(height[p1]<height[p2])
+            // if(height[p1]<height[p2])
+            //     p1++;
+            // else 
+            //     p2--;
+            //AFTER OPTIMIZATION
+            while (p1<p2 && height[p1]<=ht) //
                 p1++;
-            else 
+            while (p1<p2 && height[p2]<=ht)
                 p2--;
         }
         return most_water;
